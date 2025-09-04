@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-area">
+            <input type="text" id="todoInput" placeholder="Add a To-Do..." aria-label="To-Do input">
+            <input type="date" id="dateInput" aria-label="Due date input">
+            <button id="addButton" aria-label="Add to-do">+</button>
+        </div>
+        <div class="filter-area">
+            <button id="filterButton" aria-label="Filter to-dos">Filter</button>
+            <button id="deleteAllButton" aria-label="Delete all to-dos">Delete All</button>
+        </div>
+        <div id="errorMsg" style="color: #ff5252; background: #222; padding: 6px 12px; border-radius: 4px; margin-bottom: 10px; font-size: 0.98em; display: none;"></div>
+        <div class="todo-list-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="todoList">
+                    <tr>
+                        <td colspan="4" id="noTasks">No tasks found</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/USERNAME/NAMA-REPO.git
+git push -u origin main
